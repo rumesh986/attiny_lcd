@@ -1,5 +1,4 @@
 # Makefile for atttiny85 devices (apparently)
-
 CC = avr-gcc
 CFLAGS = -Wall -Os -DF_CPU=$(CLOCK) -mmcu=$(DEVICE)
 
