@@ -22,7 +22,7 @@
 // #include <stdbool.h>
 #include <stdlib.h>
 
-#include "avr_i2c.h"
+#include "attiny_i2c.h"
 
 void init_i2c(void) {
 	// Initial condition for SDA and SCL lines | both are high
