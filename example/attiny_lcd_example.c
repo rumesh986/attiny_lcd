@@ -18,8 +18,8 @@
 #include <avr/io.h>
 #include <util/delay.h>
 
-#include "avr_i2c.h"
-#include "avr_lcd.h"
+#include "attiny_i2c.h"
+#include "attiny_lcd.h"
 
 int main(void) {
 	init_display();
