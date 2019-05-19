@@ -15,8 +15,8 @@
 //	You should have received a copy of the GNU General Public License
 //	along with attiny_lcd.  If not, see <https://www.gnu.org/licenses/>.
 
-#ifndef __AVR_LCD_H__
-#define __AVR_LCD_H__
+#ifndef __ATTINY_LCD_H__
+#define __ATTINY_LCD_H__
 
 #include <stdbool.h>
 

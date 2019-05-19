@@ -15,8 +15,8 @@
 //	You should have received a copy of the GNU General Public License
 //	along with attiny_i2c.  If not, see <https://www.gnu.org/licenses/>.
 
-#ifndef __AVR_I2C_H__
-#define __AVR_I2C_H__
+#ifndef __ATTINY_I2C_H__
+#define __ATTINY_I2C_H__
 
 #include <stdlib.h>
 
