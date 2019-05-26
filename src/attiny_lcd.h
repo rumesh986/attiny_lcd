@@ -36,6 +36,7 @@
 void init_display(void);
 void disp_text(char *str);
 void disp_2line_text(char *str1, char *str2);
+void disp_printf(const char * format, ...);
 
 void set_backlight(bool state);
 void shift_screen(uint8_t direction, uint8_t count);

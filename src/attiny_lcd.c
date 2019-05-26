@@ -18,6 +18,9 @@
 #include <avr/io.h>
 #include <util/delay.h>
 
+#include <stdio.h>
+#include <stdarg.h>
+
 #include "attiny_lcd.h"
 #include "attiny_i2c.h"
 
@@ -96,6 +99,16 @@ void disp_2line_text(char *str1, char *str2) {
 	configure_display(LINE_2);
 	_delay_us(50);
 	disp_text(str2);
+}
+
+void disp_printf(const char * format, ...) {
+	char str_buffer[40];
+	va_list args;
+	va_start(args, format);
+	vsprintf(str_buffer, format, args);
+	va_end(args);
+
+	disp_text(str_buffer);
 }
 
 void set_backlight(bool state) {
